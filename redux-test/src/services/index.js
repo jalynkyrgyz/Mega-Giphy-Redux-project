@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const instance = axios.create({
-  baseURL: 'api.giphy.com/v1/gifs/',
+  baseURL: 'http://api.giphy.com/v1/gifs/',
 })
 
 export function getCategoriesReq() {

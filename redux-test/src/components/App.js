@@ -1,12 +1,12 @@
-import React from "react";
-import Categories from "./Category";
+import React from 'react'
+import Categories from './Category'
 
 function App() {
   return (
     <div className="App">
-      <Categories/>
+      <Categories />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
