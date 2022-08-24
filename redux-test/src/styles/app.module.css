@@ -1,0 +1,7 @@
+.app {
+    margin: 0 auto;
+    background-color: black;
+    color: #fff;
+    width: 97%;
+    border: 1px solid red;
+}
