@@ -1,0 +1,33 @@
+.navbar {
+    background-color: rgb(4, 0, 14);
+    padding: 15px 10px;
+    
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;   
+}
+
+.logo {
+    color: #e0e0ae;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    margin-left: 20px;    
+}
+
+.right {
+    margin-right: 50px;
+    display: flex;
+    gap: 30px;
+     
+}
+.menu {
+    color: bisque;  
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
