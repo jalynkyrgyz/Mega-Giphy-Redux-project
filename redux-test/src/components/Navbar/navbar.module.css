@@ -1,11 +1,33 @@
+.navbar {
+    background-color: rgb(4, 0, 14);
+    padding: 15px 10px;
+    
+}
 .container {
-    max-width: 1240px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;   
 }
 
-.active {
-    color: blue;
-    cursor: pointer;
+.logo {
+    color: #e0e0ae;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    margin-left: 20px;    
 }
+
+.right {
+    margin-right: 50px;
+    display: flex;
+    gap: 30px;
+     
+}
+.menu {
+    color: bisque;  
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
