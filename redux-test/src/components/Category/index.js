@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { PropTypes } from 'prop-types'
 // eslint-disable-next-line import/no-unresolved
 import { writeCategories } from '../../store/category/actions'
+import styles from './category.module.css'
 
 function Category({ name, subcategories, ...props }) {
   const [isActive, setIsActive] = useState(false)
@@ -16,7 +17,7 @@ function Category({ name, subcategories, ...props }) {
   function renderSubcategories() {
     if (isActive && subcategories && subcategories.length) {
       return (
-        <ul>
+        <ul className={styles.sub_list}>
           {subcategories.map((subcategory, index) => (
             // eslint-disable-next-line react/no-array-index-key
             <Category key={index} {...subcategory} />
@@ -28,7 +29,7 @@ function Category({ name, subcategories, ...props }) {
   }
 
   return (
-    <li aria-hidden>
+    <li className={styles.item}>
       <span aria-hidden onClick={handleCategoryClick}>
         {name}
       </span>
@@ -45,7 +46,7 @@ function Categories() {
   }, [])
   console.log(loading, error, categories)
   return (
-    <ul>
+    <ul className={styles.list}>
       {categories.map((category, index) => (
         // eslint-disable-next-line react/no-array-index-key
         <Category key={index} {...category} />

@@ -1,0 +1,18 @@
+.list{
+      font-weight: bold;
+      list-style: none;
+      text-transform: uppercase;
+      color: black;   
+         
+    }
+.item {
+    margin-top: 2px;
+    width: 200px;
+    cursor: pointer;
+    background-color: aqua;
+}
+ 
+.sub_list {
+    list-style: none;
+    border: none;
+}
