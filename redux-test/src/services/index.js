@@ -7,3 +7,6 @@ const instance = axios.create({
 export function getCategoriesReq() {
   return instance.get(`categories?api_key=${process.env.REACT_APP_API_KEY}`)
 }
+export function getRandomReq() {
+  return instance.get(`random?api_key=${process.env.REACT_APP_API_KEY}`)
+}

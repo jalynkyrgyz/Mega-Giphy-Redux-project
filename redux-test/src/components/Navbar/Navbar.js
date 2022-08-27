@@ -18,6 +18,9 @@ function Navbar() {
           <Link className={styles.menu} to="/random">
             Random
           </Link>
+          <Link className={styles.menu} to="/categories">
+            Categories
+          </Link>
         </div>
       </div>
     </nav>
