@@ -8,5 +8,5 @@ export function getCategoriesReq() {
   return instance.get(`categories?api_key=${process.env.REACT_APP_API_KEY}`)
 }
 export function getRandomReq() {
-  return instance.get(`random?api_key=${process.env.REACT_APP_API_KEY}`)
+  return instance.get(`random?api_key=${process.env.REACT_APP_API_KEY}&tag=&rating=g`)
 }

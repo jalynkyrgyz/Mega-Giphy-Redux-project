@@ -1,12 +1,13 @@
 import { getCategoriesReq } from '../../../services'
+import { TOGGLE_CATEGORIES_LOADER, WRITE_CATEGORIES_ERROR, WRITE_CATEGORIES } from '..'
 
 export const toggleCategoriesLoader = (bool) => ({
-  type: 'TOGGLE_CATEGORIES_LOADER',
+  type: TOGGLE_CATEGORIES_LOADER,
   payload: bool,
 })
 
 export const writeCategoriesError = (error) => ({
-  type: 'WRITE_CATEGORIES_ERROR',
+  type: WRITE_CATEGORIES_ERROR,
   payload: error,
 })
 
@@ -15,7 +16,7 @@ export const writeCategories = () => async (dispatch) => {
     dispatch(toggleCategoriesLoader(true))
     const response = await getCategoriesReq()
     dispatch(toggleCategoriesLoader(false))
-    dispatch({ type: 'WRITE_CATEGORIES', payload: response.data.data })
+    dispatch({ type: WRITE_CATEGORIES, payload: response.data.data })
   } catch (e) {
     dispatch(toggleCategoriesLoader(false))
     dispatch(writeCategoriesError(e))
