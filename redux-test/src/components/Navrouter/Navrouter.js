@@ -6,11 +6,13 @@ import Trend from '../Trend/Trend'
 
 function Navrouter() {
   return (
-    <Routes>
-      <Route path="/categories" element={<Categories />} />
-      <Route path="/trend" element={<Trend />} />
-      <Route path="/random" element={<Random />} />
-    </Routes>
+    <>
+      <Categories />
+      <Routes>
+        <Route exact path="/" element={<Trend />} />
+        <Route exact path="/random" element={<Random />} />
+      </Routes>
+    </>
   )
 }
 
