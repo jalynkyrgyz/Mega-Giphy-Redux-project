@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-// import { PropTypes } from 'prop-types'
+
 import { writeRandom } from '../../store/random/actions'
 
 function Random() {
   const dispatch = useDispatch()
-  const { random, loading, error } = useSelector((state) => state.randomReducer)
+  const { random, loading, error } = useSelector((state) => state.random)
 
   useEffect(() => {
     dispatch(writeRandom())
@@ -19,7 +19,3 @@ function Random() {
 }
 
 export default Random
-// Random.propTypes = {
-//   name: PropTypes.string.isRequired,
-//   subcategories: PropTypes.array,
-// }
