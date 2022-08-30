@@ -12,7 +12,7 @@ function Navbar() {
           </Link>
         </div>
         <div className={styles.right}>
-          <Link className={styles.menu} to="/trend">
+          <Link className={styles.menu} to="/">
             Trend
           </Link>
           <Link className={styles.menu} to="/random">
