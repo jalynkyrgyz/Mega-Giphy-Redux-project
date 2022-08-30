@@ -8,12 +8,14 @@ import styles from '../styles/app.module.css'
 function App() {
   return (
     <div className={styles.app}>
-      <header>
+      <header className={styles.header}>
         <Navbar />
       </header>
-      <Navrouter />
-      {/* <Link to="/categories">Categories</Link> */}
-      {/* <Random /> */}
+      <div className={styles.main}>
+        <Navrouter />
+        {/* <Link to="/categories">Categories</Link> */}
+        {/* <Random /> */}
+      </div>
     </div>
   )
 }

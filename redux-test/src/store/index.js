@@ -2,8 +2,13 @@ import { applyMiddleware, combineReducers, compose, legacy_createStore as create
 import thunkMiddleware from 'redux-thunk'
 import { categoryReducer } from './category'
 import { randomReducer } from './random'
+import { trendReducer } from './trend'
 
-const rootReducer = combineReducers({ categories: categoryReducer, random: randomReducer })
+const rootReducer = combineReducers({
+  categories: categoryReducer,
+  random: randomReducer,
+  trends: trendReducer,
+})
 export const store = createStore(
   rootReducer,
   compose(
