@@ -1,0 +1,16 @@
+.trend{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.trend_title {
+    color: black;
+    font-weight: bold;
+}
+
+.trend_inner{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}

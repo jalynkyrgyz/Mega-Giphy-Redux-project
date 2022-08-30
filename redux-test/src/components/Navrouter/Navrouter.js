@@ -9,7 +9,7 @@ function Navrouter() {
     <>
       <Categories />
       <Routes>
-        <Route exact path="/" element={<Trend />} />
+        <Route exact path="/trend" element={<Trend />} />
         <Route exact path="/random" element={<Random />} />
       </Routes>
     </>
