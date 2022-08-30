@@ -8,7 +8,7 @@ import styles from './Trend.module.css'
 function TrendItem({ images }) {
   return (
     <div>
-      <img src={images.fixed_height_downsampled.url} alt="img" />
+      <img className={styles.trend_item} src={images.fixed_height_downsampled.url} alt="img" />
     </div>
   )
 }
