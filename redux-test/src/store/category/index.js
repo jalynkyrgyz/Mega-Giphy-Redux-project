@@ -1,7 +1,6 @@
 export const WRITE_CATEGORIES = 'WRITE_CATEGORIES'
 export const WRITE_CATEGORIES_ERROR = 'WRITE_CATEGORIES_ERROR'
 export const TOGGLE_CATEGORIES_LOADER = 'TOGGLE_CATEGORIES_LOADER'
-
 const initialState = {
   categories: [],
   loading: false,

@@ -14,3 +14,10 @@ export function getRandomReq() {
 export function getTrendReq() {
   return instance.get(`trending?api_key=${process.env.REACT_APP_API_KEY}&limit=25&rating=g`)
 }
+
+// eslint-disable-next-line no-unused-vars
+export function getGifsByNameReq(name) {
+  return instance.get(
+    `search?api_key=${process.env.REACT_APP_API_KEY}&q=&limit=25&offset=0&rating=g&lang=en`,
+  )
+}
